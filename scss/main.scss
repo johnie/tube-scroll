@@ -35,8 +35,6 @@ Progress, Percentage & Key button --- 10
 body {
   height: 10000px;/*controls length of the scroll*/
   font-family: Open Sans, helvicta neue, sans-serif;
-  overflow-y: auto;
-  -webkit-overflow-scrolling: touch;
 }
 
 /*-- metro system title --*/
@@ -75,7 +73,9 @@ body {
 
 /*-- key overlay --*/
 .key-overlay {
-  @include fixed-fullscreen();
+  position: fixed;
+  width: 100%;
+  height: 100%;
   background: white;
   z-index: 20;
   display: none;
