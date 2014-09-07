@@ -1,0 +1,50 @@
+//_washington-metro.scss
+
+//border colours for washington metro 'show/hide' buttons
+button {
+  &#orangeline-btn {
+    border-color: #da8800;
+  }
+  &#silverline-btn {
+    border-color: #a1a1a1;
+  }
+  &#blueline-btn {
+    border-color: #4990e2;
+  }
+  &#greenline-btn {
+    border-color: #5cad00;
+  }
+  &#yellowline-btn {
+    border-color: #f8d41c;
+  }
+  &#redline-btn {
+    border-color: #b9003b;
+  }
+}
+
+//offsets for washington metro svg animation
+#orangeline {
+  stroke-dashoffset: 1360;
+  stroke-dasharray: 1360;
+}
+#silverline {
+  stroke-dashoffset: 1600;
+  stroke-dasharray: 1600;
+}
+#blueline {
+  stroke-dashoffset: 1890;
+  stroke-dasharray: 1890;
+}
+#greenline {
+  stroke-dashoffset: 1140;
+  stroke-dasharray: 1140;
+}
+#yellowline {
+  stroke-dashoffset: 1800;
+  stroke-dasharray: 1800;
+}
+#redline {
+  stroke-dashoffset: 1460;
+  stroke-dasharray: 1460;
+}
+

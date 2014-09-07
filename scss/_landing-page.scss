@@ -1,0 +1,166 @@
+//_landing-page.scss
+
+//settings specific to the landing page (index.html)
+/*-colour variables-*/
+
+//$base-colour: #ED303C;
+//$base-colour: #F07818;
+//$base-colour: #26ADE4;
+//$base-colour: #555;
+$base-colour: firebrick;
+$text-colour: lighten($base-colour, 25%);
+$text-light-highlight: lighten($text-colour, 10%);
+$text-dark-highlight: darken($base-colour, 10%);
+
+/*body settings just for index.html*/
+.landing-page {
+  background: $base-colour;
+  height: 0;
+}
+
+/*-information slider open & close button-*/
+.info-btn {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  line-height: 28px;
+  color: white;
+  background: $text-colour;
+  text-align: center;
+  font-size: 1.2em;
+  font-family: Paytone One, Open Sans, sans-serif;
+  cursor: pointer;
+}
+
+/*-twitter button-*/
+.twitter-share-button {
+  position: relative;
+  top: 8px;
+  left: 8px;
+  font-size: 0;/*hide placeholder text*/
+}
+
+/*-information slider-*/
+.info-slider {
+  width: 100%;
+  padding: 40px 0;
+  background: whitesmoke;
+  text-align: center;
+  display: none;
+  font-size: .8em;
+    p {
+      margin: auto;
+      max-width: 640px;
+      padding: 10px 15%;
+    }
+}
+
+
+/*-main logo, main logo hover & media query*/
+.logo {
+  position: relative;
+  margin-top: 20px;
+  width: 80px;
+  height: 100px;
+  @include horizontal-center;
+    @media (min-width: 960px) {
+      width: 160px;
+      height: 200px;
+        &:hover {
+          -webkit-animation: choo-choo .6s linear 10;
+          -moz-animation: choo-choo .6s linear 10;
+          -ms-animation: choo-choo .6s linear 10;
+          -o-animation: choo-choo .6s linear 10;
+          animation: choo-choo .6s linear 10;
+          -webkit-transform-origin: bottom left;
+          -moz-transform-origin: bottom left;
+          -ms-transform-origin: bottom left;
+          -o-transform-origin: bottom left;
+          transform-origin: bottom left;
+        }
+    }
+}
+/*-main-logo animation-*/
+@-webkit-keyframes choo-choo {
+  25% {-webkit-transform: rotate(1deg) translateX(-50%);}
+  75% {-webkit-transform: rotate(-1deg) translateX(-50%);}
+}
+@-moz-keyframes choo-choo {
+  25% {-moz-transform: rotate(1deg) translateX(-50%);}
+  75% {-moz-transform: rotate(-1deg) translateX(-50%);}
+}
+@-ms-keyframes choo-choo {
+  25% {-ms-transform: rotate(1deg) translateX(-50%);}
+  75% {-ms-transform: rotate(-1deg) translateX(-50%);}
+}
+@-o-keyframes choo-choo {
+  25% {-o-transform: rotate(1deg) translateX(-50%);}
+  75% {-o-transform: rotate(-1deg) translateX(-50%);}
+}
+@keyframes choo-choo {
+  25% {transform: rotate(1deg) translateX(-50%);}
+  75% {transform: rotate(-1deg) translateX(-50%);}
+}
+
+/*heading text*/
+h1 {
+  margin: 0;
+  padding: 0 20px;
+  font-family: Paytone One, sans-serif;
+  font-weight: normal;//stop mobile fake bold text bug thing
+  font-size: 4em;
+  color: $text-colour;
+  text-align: center;
+  text-shadow: 0 2px $text-dark-highlight, 0 -1px $text-light-highlight;
+    @media (min-width: 960px) {
+      font-size: 7em;
+    }
+}
+
+/*intro paragraph text*/
+.intro {
+  margin: auto;
+  max-width: 540px;
+  padding: 0 15%; 
+  text-align: center;
+  color: white;
+}
+
+
+/*-container for list of maps, its links & media queries-*/
+.map-list-container {
+  width: 70%;
+  margin: 20px auto;
+  text-align: center;
+    @media (min-width: 960px) {
+      max-width: 960px;
+    }
+    a {
+      display: inline-block;
+      border: 3px solid white;
+      margin: 10px;
+      text-decoration: none;
+      font-size: 1.4em;
+      padding: 8px;
+      color: white;
+      box-shadow: 0 4px $text-dark-highlight;
+      -webkit-transition: transform .2s ease-in-out;
+      -moz-transition: transform .2s ease-in-out;
+      -ms-transition: transform .2s ease-in-out;
+      -o-transition: transform .2s ease-in-out;
+      transition: transform .2s ease-in-out;
+        @media (min-width: 960px) {
+          &:hover {
+            -webkit-transform: scale(1.2); 
+            -moz-transform: scale(1.2); 
+            -ms-transform: scale(1.2); 
+            -o-transform: scale(1.2); 
+            transform: scale(1.2);  
+          }
+        }
+    } 
+}
+

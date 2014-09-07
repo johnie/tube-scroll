@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tube Scroll - Washington Metro</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="js/app.js"></script>
+  </head>
+  <body>
+    
+    <div class="progress"></div>
+    
+    <div class="metro-title">WASHINGTON METRO</div>
+    
+    <div class="percentage-indicator">0%</div>
+    
+    <div class="key">KEY</div>
+    
+    <div class="key-overlay">
+      
+      <div class="close-key">X</div>
+      
+      <p>CLICK OR TAP TO HIDE</p>
+      
+      <button id="orangeline-btn">ORANGE LINE</button>  
+      <button id="silverline-btn">SILVER LINE</button> 
+      <button id="blueline-btn">BLUE LINE</button>
+      <button id="greenline-btn">GREEN LINE</button>
+      <button id="yellowline-btn">YELLOW LINE</button>  
+      <button id="redline-btn">RED LINE</button> 
+      
+    </div>
+    
+    <div class="info">INFO</div>
+    
+    <div class="info-overlay">
+      
+      <div class="close-info">X</div>
+      
+      <p class="info-title-text">WASHINGTON METRO</p>
+      <p>6 Lines</p>
+      <p>91 Stations</p>
+      <p>Established in 1976</p>
+      <p>System length - 117mi (188km)</p>
+      
+      <p>
+        <a href="http://en.m.wikipedia.org/wiki/Washington_Metro" target="_blank">Washington Metro Wikipedia Page</a>
+      </p>
+        
+    </div>
+    
+    <a class="back" href="index.html">BACK</a>
+    
+    <svg width="2000px" height="1350px" viewBox="0 0 2000 1350" version="1.1">
+      <g stroke="none" stroke-width="16" fill="none" fill-rule="evenodd" stroke-linecap="round">
+        <path d="M498,674.775055 L791.648019,674.775055 C799.92709,674.775055 806.638604,668.066064 806.638604,659.770221 L806.638604,610.008127 C806.638604,582.389401 829.034105,560 856.630412,560 L1031.38391,560 C1058.99362,560 1081.49494,582.377464 1081.64212,610.000158 L1082.20688,715.997866 C1082.24808,723.731031 1088.54652,730 1096.27653,730 L1260.21606,730 C1263.53105,730 1268.09167,728.064867 1270.39308,725.687483 L1292.83188,702.507928 C1300.51454,694.571647 1315.7048,688.13802 1326.74338,688.13802 L1408.35576,688.13802 C1414.98157,688.13802 1424.15136,684.325456 1428.82237,679.637156 L1545,563.029414" id="orangeline" stroke="#DA8800"></path> 
+        <path d="M379,429 L639.241363,689.386804 C641.580016,691.726763 646.161913,693.623675 649.484682,693.623675 L795.20872,693.623675 C812.884387,693.623675 827.213346,679.29902 827.213346,661.629179 L827.213346,611.373255 C827.213346,593.703182 841.548449,579.378759 859.211422,579.378759 L1031.11152,579.378759 C1048.78357,579.378759 1063.17544,593.712624 1063.25661,611.382869 L1063.74175,716.99589 C1063.82294,734.671272 1078.2126,749 1095.89459,749 L1263.00618,749 C1269.62993,749 1278.77814,745.176398 1283.43728,740.461765 L1307.70537,715.904618 C1312.3654,711.189081 1321.51654,707.366383 1328.14481,707.366383 L1622,707.366383" id="silverline" stroke="#A1A1A1"></path>
+        <path d="M797,1220 L797,1157.36652 C797,1139.68875 811.318411,1125.35808 829.002642,1125.35808 L1008.13883,1125.35808 C1015.86986,1125.35808 1022.1371,1119.09487 1022.1371,1111.36191 L1022.1371,1014.4874 C1022.1371,1006.20591 1015.42331,999.492434 1007.14094,999.492434 L982.603245,999.492434 C964.92928,999.492434 950.601701,985.161877 950.601701,967.495746 L950.601701,863.620055 C950.601701,856.988416 946.799404,847.816317 942.106452,843.131021 L855.286446,756.452653 C850.59465,751.768511 846.791197,742.603352 846.791197,735.969394 L846.791197,614.000452 C846.791197,605.715931 853.50206,599 861.790936,599 L1028.40086,599 C1036.68499,599 1043.4006,605.721654 1043.4006,614.001839 L1043.4006,718.466146 C1043.4006,746.08062 1065.77713,768.466574 1093.4031,768.466574 L1264.9619,768.466574 C1274.90663,768.466574 1288.67346,762.78766 1295.72998,755.763435 L1320.92977,730.679008 C1322.88388,728.733843 1326.7129,727.156975 1329.4764,727.156975 L1622,727.156975" id="blueline" stroke="#4990E2"></path>      
+        <path d="M1329.38506,287 L1175.96823,439.653323 C1171.27047,444.327704 1162.09562,448.117038 1155.46328,448.117038 L1106.99912,448.117038 C1098.71534,448.117038 1092,454.834039 1092,463.111311 L1092,485.63181 C1092,493.912918 1098.71695,500.626082 1107.00578,500.626082 L1125.93972,500.626082 C1143.6172,500.626082 1157.94763,514.950407 1157.94763,532.624583 L1157.94763,848.888444 C1157.94763,857.174561 1164.66469,863.891786 1172.9406,863.891786 L1253.97936,863.891786 C1260.6068,863.891786 1269.75444,867.705354 1274.41725,872.415763 L1326.10585,924.632008 C1331.93397,930.519622 1341.40768,930.541583 1347.26619,924.680848 L1357.54512,914.39801 C1363.40353,908.537369 1372.92195,908.518688 1378.80035,914.351577 L1450,985" id="greenline" stroke="#5CAD00"></path>
+        <path d="M1316,273 L1165.2166,424.108584 C1162.87661,426.453614 1158.2896,428.354637 1154.98364,428.354637 L1105.49596,428.354637 C1087.82158,428.354637 1073.49366,442.689737 1073.49366,460.353805 L1073.49366,488.261608 C1073.49366,505.93426 1087.82163,520.260775 1105.48439,520.260775 L1123.06238,520.260775 C1131.89746,520.260775 1139.0597,527.421569 1139.0597,536.259162 L1139.0597,807.545318 C1139.0597,816.380983 1131.90078,823.543705 1123.06301,823.543705 L1047.50626,823.543705 C1040.87547,823.543705 1031.72115,827.37551 1027.07319,832.088412 L979.277232,880.552168 C974.623148,885.271279 970.850267,894.465826 970.850267,901.097609 L970.850267,965.087851 C970.850267,973.371998 977.566191,980.087627 985.843499,980.087627 L1010.58301,980.087627 C1028.25448,980.087627 1042.58003,994.421218 1042.58003,1012.08566 L1042.58003,1220 L1042.58003,1090.30309 L1042.58003,1112.71032 C1042.58003,1130.38734 1028.25494,1144.71739 1010.58914,1144.71739 L832.997246,1144.71739 C824.162211,1144.71739 817,1151.88468 817,1160.71744 L817,1220" id="yellowline" stroke="#F8D41C"></path>
+        <path d="M633,191.194269 L880.453865,438.325274 C882.801111,440.669458 887.381222,442.569794 890.702792,442.569794 L910.10677,442.569794 C913.41985,442.569794 917.987786,444.487576 920.308406,446.852123 L996.799181,524.790795 C999.120309,527.15586 1001.04614,531.765713 1001.10028,535.065171 L1002.5926,626.005213 C1002.70131,632.629751 1008.16221,638 1014.77952,638 L1250.17612,638 C1256.79805,638 1262.09962,632.630886 1262.01738,625.998264 L1260.34653,491.25252 C1260.30544,487.939025 1258.36745,483.345537 1256.03856,481.013358 L1097.46893,322.219799 C1095.13079,319.878361 1093.23536,315.290641 1093.23536,311.985966 L1093.23536,129" id="redline" stroke="#B9003B"></path> 
+      </g> 
+    </svg>
+      
+    
+    <script>
+      
+      $(document).ready(function () {
+      
+        //WASHINGTON METRO
+        var $orangeline = parseInt($("#orangeline").css("stroke-dashoffset"), 10);
+        var $silverline = parseInt($("#silverline").css("stroke-dashoffset"), 10);
+        var $blueline = parseInt($("#blueline").css("stroke-dashoffset"), 10);
+        var $greenline = parseInt($("#greenline").css("stroke-dashoffset"), 10);
+        var $yellowline = parseInt($("#yellowline").css("stroke-dashoffset"), 10);
+        var $redline = parseInt($("#redline").css("stroke-dashoffset"), 10);
+      
+        //on a scroll event - execute function
+        $(window).on('scroll', function () {    
+
+          var a = $(window).scrollTop();
+          var b = $("html").height();  
+          //$(window).height() returns the document for some reason
+          //so using vanilla JS instead
+          var c = window.innerHeight;
+
+          //calculate how far down the page the user is 
+          var $percentComp = ( ( a / ( b - c ) ) * 100 );    
+
+          //set the new value of the dashoffset (based on current %) to create the drawing effect
+          //WASHINGTON METRO
+          $("#orangeline").css("stroke-dashoffset", $orangeline-($percentComp*($orangeline/100)));
+          $("#silverline").css("stroke-dashoffset", $silverline-($percentComp*($silverline/100)));
+          $("#blueline").css("stroke-dashoffset", $blueline-($percentComp*($blueline/100)));
+          $("#greenline").css("stroke-dashoffset", $greenline-($percentComp*($greenline/100)));
+          $("#yellowline").css("stroke-dashoffset", $yellowline-($percentComp*($yellowline/100)));
+          $("#redline").css("stroke-dashoffset", $redline-($percentComp*($redline/100)));
+
+          //display the $percentComp variable as a width percentage
+          $(".progress").css("width", $percentComp + "%");
+          
+          //display the percentage complete in the overlay as a rounded number
+          $(".percentage-indicator").text(Math.round($percentComp) + "%");
+
+        });
+        
+      });
+      
+    </script>
+  </body>
+</html>

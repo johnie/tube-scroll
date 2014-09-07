@@ -1,0 +1,183 @@
+/*=== Z-INDEX ORDER ===*/
+/*
+Key overlay ------------------------- 20
+Menu overlay ------------------------ 20
+Progress, Percentage & Key button --- 10
+*/
+
+/*==============================*/
+/*===== IMPORTS - PARTIALS =====*/
+/*==============================*/
+
+/*-fonts-*/
+@import url(http://fonts.googleapis.com/css?family=Open+Sans|Paytone+One);
+
+/*-mixins & properties for jquery-*/
+@import 'mixins';
+@import 'js-specific';
+
+/*-partials for dashoffsets, button colours, etc-*/
+@import 'landing-page';
+@import 'los-santos';
+@import 'london-underground';
+@import 'tokyo-metro';
+@import 'milan-metro';
+@import 'moscow-metro';
+@import 'madrid-metro';
+@import 'washington-metro';
+
+
+/*================*/
+/*===== SCSS =====*/
+/*================*/
+
+/*--body--*/
+body {
+  height: 10000px;/*controls length of the scroll*/
+  font-family: Open Sans, helvicta neue, sans-serif;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+/*-- metro system title --*/
+.metro-title {
+  position: fixed;
+  top: 18px;
+  @include horizontal-center();
+  text-align: center;
+  font-size: 1.4em;
+}
+
+/*-- information overlay --*/
+.info-overlay {
+  @include fixed-fullscreen();
+  padding-top: 40px;
+  background: white;
+  z-index: 20;
+  display: none; 
+    p {
+      width: 100%;
+      text-align: center;
+      font-size: 1em;
+      margin-bottom: 20px; 
+    }
+    .info-title-text {
+      font-size: 1.7em; 
+      width: 80%;
+      margin: auto;
+    }
+    .los-santos-note-text {
+      width: 85%;
+      max-width: 640px;
+      margin: auto;
+    }
+}
+
+/*-- key overlay --*/
+.key-overlay {
+  @include fixed-fullscreen();
+  background: white;
+  z-index: 20;
+  display: none;
+    @media (min-width: 960px) {
+      width: 35%;
+      height: auto;
+      top: 10px;
+      right: 10px;
+      border: 3px solid #7d2948;
+      border-radius: 10px;
+      padding: 14px;
+    }
+    p {
+      width: 80%;
+      font-size: 1.6em;
+      margin: 12px 6px;
+    }
+}
+
+/*-close button for key & info overlays-*/
+.close-key,
+.close-info {
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  width: 44px;
+  height: 44px;
+  background: #7d2948;
+  border-radius: 50%;
+  color: white;
+  text-align: center;
+  line-height: 44px;
+  font-size: 1em;
+  cursor: pointer;
+} 
+
+/*-buttons in the key overlay-*/
+button {
+  margin: 6px; 
+  /*border colours are defined in 
+    the metro page partials*/
+  border-width: 4px;
+  border-style: solid;
+  background: white;
+}
+
+/*-progress bar-*/
+.progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 6px;
+  background: #7d2948;
+  border-bottom: 4px solid darken(#7d2948, 10%);
+}
+
+/*-percentage complete indicator-*/
+.percentage-indicator {
+  position: fixed;
+  top: 18px;
+  left: 18px;
+  width: 46px;
+  height: 46px;
+  background: #7d2948;
+  border-radius: 50%;
+  font-size: .8em;
+  text-align: center;
+  line-height: 46px;
+  color: white;
+}
+
+/*key, info & back buttons*/
+.key,
+.info,
+.back {
+  position: fixed;
+  left: 18px;
+  width: 40px;
+  height: 20p;
+  border: 3px solid #7d2948;
+  background: white;
+  font-size: .8em;
+  text-align: center;
+  line-height: 20px;
+  z-index: 10;
+  cursor: pointer;
+} 
+.key {
+  top: 80px;
+}
+.info {
+  top: 118px;
+}
+.back {
+  top: 156px;
+  text-decoration: none;
+  color: black;
+}
+
+/*-- svg settings --*/
+svg {
+  @include absolute-center;
+  position: fixed;
+  width: 80%;
+}

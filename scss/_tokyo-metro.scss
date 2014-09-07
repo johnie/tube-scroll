@@ -1,0 +1,98 @@
+//_tokyo-metro.scss
+
+//border colours for tokyo metro 'show/hide' buttons
+button {
+  &#mita-btn {
+    border-color: #4a59eb;
+  }
+  &#fukutoshin-btn {
+    border-color: #c74500;
+  }
+  &#tozai-btn {
+    border-color: #00b3fa;
+  }
+  &#yurakucho-btn {
+    border-color: #ecb800;
+  }
+  &#chiyoda-btn {
+    border-color: #529900;
+  }
+  &#asakusa-btn {
+    border-color: #ea6e68;
+  }
+  &#shinjuku-btn {
+    border-color: #7db435;
+  }
+  &#namboku-btn {
+    border-color: #1aad9b;
+  }
+  &#hibiya-btn {
+    border-color: #c7c7c7;
+  }
+  &#ginza-btn {
+    border-color: #f29b26;
+  }
+  &#oedo-btn {
+    border-color: #d8176f;
+  }
+  &#hanzomon-btn {
+    border-color: #902286;
+  }
+  &#marunouchi-btn {
+    border-color: #e30b20;
+  }
+}
+
+//offsets for tokyo metro svg animation
+#mita {
+  stroke-dashoffset: 2100;
+  stroke-dasharray: 2100;
+}
+#fukutoshin {
+  stroke-dashoffset: 990;
+  stroke-dasharray: 990;
+}
+#tozai {
+  stroke-dashoffset: 1560;
+  stroke-dasharray: 1560;
+}
+#yurakucho {
+  stroke-dashoffset: 1910;
+  stroke-dasharray: 1910;
+}
+#chiyoda {
+  stroke-dashoffset: 1980;
+  stroke-dasharray: 1980;
+}
+#asakusa {
+  stroke-dashoffset: 1780;
+  stroke-dasharray: 1780;
+}
+#shinjuku {
+  stroke-dashoffset: 1430;
+  stroke-dasharray: 1430;
+}
+#namboku {
+  stroke-dashoffset: 1430;
+  stroke-dasharray: 1430;
+}
+#hibiya {
+  stroke-dashoffset: 1880;
+  stroke-dasharray: 1880;
+}
+#ginza {
+  stroke-dashoffset: 1700;
+  stroke-dasharray: 1700;
+}
+#oedo {
+  stroke-dashoffset: 3300;
+  stroke-dasharray: 3300;
+}
+#hanzomon {
+  stroke-dashoffset: 1540;
+  stroke-dasharray: 1540;
+}
+#marunouchi {
+  stroke-dashoffset: 2500;
+  stroke-dasharray: 2500;
+}

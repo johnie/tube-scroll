@@ -1,0 +1,35 @@
+//_milan-metro.scss
+
+//border colours for milan metro 'show/hide' buttons
+button {
+  &#m1-btn {
+    border-color: #d82333;
+  }
+  &#m2-btn {
+    border-color: #508a34;
+  }
+  &#m3-btn {
+    border-color: #f4b728;
+  }
+  &#m5-btn {
+    border-color: #9285b3;
+  }
+}
+
+//offsets for milan metro svg animation
+#m1 {
+  stroke-dashoffset: 2190;
+  stroke-dasharray: 2190;
+}
+#m2 {
+  stroke-dashoffset: 1870;
+  stroke-dasharray: 1870;
+}
+#m3 {
+  stroke-dashoffset: 1140;
+  stroke-dasharray: 1140;
+}
+#m5 {
+  stroke-dashoffset: 350;
+  stroke-dasharray: 350;
+}

@@ -1,0 +1,105 @@
+//_london-underground.scss
+
+//border colours for london underground 'show/hide' buttons
+button {
+  &#bakerloo-btn {
+    border-color: #a86932;
+  }
+  &#central-btn {
+    border-color: #f54223;
+  }
+  &#circle-btn {
+   border-color: #f8e71c;
+  }
+  &#district-btn {
+    border-color: #417505;
+  }
+  &#hammersmith-btn {
+    border-color: #ff86c6;
+  }
+  &#jubilee-btn {
+    border-color: #979797;
+  }
+  &#metropolitan-btn {
+    border-color: #940082;
+  }
+  &#northern-btn {
+    border-color: #000;
+  }
+  &#piccadilly-btn {
+    border-color: #313ca3;
+  }
+  &#victoria-btn {
+    border-color: #4a90e2;
+  }
+  &#waterloo-btn {
+    border-color: #69c2af;
+  }
+  &#dlr-btn {
+    border-color: #40dfc2;
+  }
+  &#overground-btn {
+    border-color: #f5a623;
+  }
+  &#emirates-btn {
+    border-color: #9d0000;
+  }
+}
+
+//offsets for london underground svg animation
+#bakerloo {
+  stroke-dashoffset: 1970;
+  stroke-dasharray: 1970;
+}
+#central {
+  stroke-dashoffset: 3310;
+  stroke-dasharray: 3310;
+}
+#circle {
+  stroke-dashoffset: 3700;
+  stroke-dasharray: 3700;
+}
+#district {
+  stroke-dashoffset: 3500;
+  stroke-dasharray: 3500;
+}
+#hammersmith {
+  stroke-dashoffset: 2770;
+  stroke-dasharray: 2770;
+}
+#jubilee {
+  stroke-dashoffset: 3250;
+  stroke-dasharray: 3250;
+}
+#metropolitan {
+  stroke-dashoffset: 2700;
+  stroke-dasharray: 2700;
+}
+#northern {
+  stroke-dashoffset: 2400;
+  stroke-dasharray: 2400;
+}
+#piccadilly {
+  stroke-dashoffset: 3300;
+  stroke-dasharray: 3300;
+}
+#victoria {
+  stroke-dashoffset: 2500;
+  stroke-dasharray: 2500; 
+}
+#waterloo {
+  stroke-dashoffset: 570;
+  stroke-dasharray: 570;
+}
+#dlr {
+  stroke-dashoffset: 1370;
+  stroke-dasharray: 1370;
+}
+#overground {
+  stroke-dashoffset: 3200;
+  stroke-dasharray: 3200;
+}
+#emirates {
+  stroke-dashoffset: 230;
+  stroke-dasharray: 230;
+}

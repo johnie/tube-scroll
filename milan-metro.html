@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tube Scroll - Milan Metro</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="js/app.js"></script>
+  </head>
+  <body>
+    
+    <div class="progress"></div>
+    
+    <div class="metro-title">MILAN METRO</div>
+    
+    <div class="percentage-indicator">0%</div>
+    
+    <div class="key">KEY</div>
+    
+    <div class="key-overlay">
+      
+      <div class="close-key">X</div>
+      
+      <p>CLICK OR TAP TO HIDE</p>
+      
+      <button id="m1-btn">M1</button>  
+      <button id="m2-btn">M2</button> 
+      <button id="m3-btn">M3</button>
+      <button id="m5-btn">M5</button>
+      
+    </div>
+    
+    <div class="info">INFO</div>
+    
+    <div class="info-overlay">
+      
+      <div class="close-info">X</div>
+      
+      <p class="info-title-text">MILAN METRO</p>
+      <p>4 Lines</p>
+      <p>103 Stations</p>
+      <p>Established in 1964</p>
+      <p>System length - 58.7mi (94.5km)</p>
+      
+      <p>
+        <a href="http://en.m.wikipedia.org/wiki/Milan_Metro" target="_blank">Milan Metro Wikipedia Page</a>
+      </p>
+        
+    </div>
+    
+    <a class="back" href="index.html">BACK</a>
+    
+    <svg width="2000px" height="1350px" viewBox="0 0 2000 1350" version="1.1">
+      <g stroke="none" stroke-width="10" fill="none" fill-rule="evenodd" stroke-linecap="round"> 
+        <path d="M997.5,323 L997.5,666" id="m5" stroke="#9285B3"></path>
+        <path d="M824,347 L1106.83514,631.54004 L1106.83513,811.129736 L1454.40044,1157 L1516,1156.99998" id="m3" stroke="#F4B728"></path>
+        <path d="M1617,192 L1615.98273,481.784229 L1580.25593,520.732132 L1580.25593,411.335201 L1580.25593,520.732132 L1447.19943,665.517767 L993.409995,665.517767 L924.001254,737.349786 L924.001252,1075.11755 L963.371225,1116.7941 L924.001254,1075.11753 L857,1148" id="m2" stroke="#508A34"></path>
+        <path d="M381,540.982615 L697.073315,861.998036 L495.603694,1066 L697.073315,861.998036 L1158.85279,861.998036 L1246.99999,773.334233 L1247,204" id="m1" stroke="#D82333"></path>
+      </g>
+    </svg>
+      
+    
+    <script>
+      
+      $(document).ready(function () {
+      
+        //MILAN METRO
+        var $m1 = parseInt($("#m1").css("stroke-dashoffset"), 10);
+        var $m2 = parseInt($("#m2").css("stroke-dashoffset"), 10);
+        var $m3 = parseInt($("#m3").css("stroke-dashoffset"), 10);
+        var $m5 = parseInt($("#m5").css("stroke-dashoffset"), 10);
+
+        //on a scroll event - execute function
+        $(window).on('scroll', function () {    
+
+          var a = $(window).scrollTop();
+          var b = $("html").height();  
+          //$(window).height() returns the document for some reason
+          //so using vanilla JS instead
+          var c = window.innerHeight;
+
+          //calculate how far down the page the user is 
+          var $percentComp = ( ( a / ( b - c ) ) * 100 );    
+
+          //set the new value of the dashoffset (based on current %) to create the drawing effect        
+          //MILAN METRO
+          $("#m1").css("stroke-dashoffset", $m1-($percentComp*($m1/100)));
+          $("#m2").css("stroke-dashoffset", $m2-($percentComp*($m2/100)));
+          $("#m3").css("stroke-dashoffset", $m3-($percentComp*($m3/100)));
+          $("#m5").css("stroke-dashoffset", $m5-($percentComp*($m5/100)));
+
+          //display the $percentComp variable as a width percentage
+          $(".progress").css("width", $percentComp + "%");
+
+          //display the percentage complete in the overlay as a rounded number
+          $(".percentage-indicator").text(Math.round($percentComp) + "%");
+
+        });
+        
+      });
+      
+    </script>
+  </body>
+</html>

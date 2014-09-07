@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tube Scroll - Moscow Metro</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="js/app.js"></script>
+  </head>
+  <body>
+    
+    <div class="progress"></div>
+    
+    <div class="metro-title">MOSCOW METRO</div>
+    
+    <div class="percentage-indicator">0%</div>
+      
+    <div class="key">KEY</div>
+    
+    <div class="key-overlay">
+      
+      <div class="close-key">X</div>
+      
+      <p>CLICK OR TAP TO HIDE</p>
+      
+      <button id="soko-btn">SOKO</button>  
+      <button id="zamo-btn">ZAMO</button> 
+      <button id="arba-btn">ARBA</button>
+      <button id="file-btn">FILE</button>
+      <button id="kolt-btn">KOLT</button>  
+      <button id="kalu-btn">KALU</button> 
+      <button id="taga-btn">TAGA</button>
+      <button id="kali-btn">KALI</button>
+      <button id="serp-btn">SERP</button>
+      <button id="lyub-btn">LYUB</button> 
+      <button id="kakh-btn">KAKH</button>
+      
+    </div>
+      
+    <div class="info">INFO</div>
+    
+    <div class="info-overlay">
+      
+      <div class="close-info">X</div>
+      
+      <p class="info-title-text">MOSCOW METRO</p>
+      <p>12 Lines</p>
+      <p>195 Stations</p>
+      <p>Established in 1935</p>
+      <p>System length - 202.2mi (325.4km)</p>
+      
+      <p>
+        <a href="http://en.m.wikipedia.org/wiki/Moscow_Metro" target="_blank">Moscow Metro Wikipedia Page</a>
+      </p>
+        
+    </div>
+    
+    <a class="back" href="index.html">BACK</a>
+    
+    <svg width="2000px" height="1350px" viewBox="0 0 2000 1350" version="1.1">
+      <g stroke="none" stroke-width="10" fill="none" fill-rule="evenodd">
+        <path d="M1315,241 L1315,286.864432 L607,994" id="soko" stroke="#F4001D"></path>
+        <path d="M730,195 L730,323.000082 L1026.56816,621.463268 L1026.56816,784.798547 L1186.90878,942.966321 L1187.41999,1090.81453 L1350,1254" id="zamo" stroke="#339600"></path>
+        <path d="M497,315 L497,627.318238 L682.641525,810 L848.364674,644.34614 L1286.66505,644.34614 L1379,554.348458 L1379,398.949862" id="arba" stroke="#3945BB"></path>
+        <path d="M525.076922,612.948914 L682.350283,769 L753.128631,698.908971 L680.98707,626.66958 L680.987077,589 L680.987077,626.669582 L753.128631,698.908971 L830.478558,622.547703 L935,622.547703" id="file" stroke="#4D9AF2"></path>
+        <circle id="kolt" stroke="#8B572A" cx="1003" cy="608" r="255"></circle>
+        <path d="M835.662792,1152 L790,1102.34112 L790,1050.41712 L930.189507,909.515089 L930.189507,851.483222 L1122.34077,658.755025 L1122.34079,381.489019 L1144.44817,362.406809 L1144.44817,205.132231 L1197,153.816602 L1197,114" id="kalu" stroke="#F6A623"></path>
+        <path d="M623,296 L623,423.233233 L750.948217,549.399688 L1051.13103,549.399688 L1407.08714,906 L1477,906" id="taga" stroke="#B900A7"></path>
+        <path d="M1052,770 L1343.14409,769.999999 L1456.60083,659 L1505,659" id="kali" stroke="#F8D11C"></path>
+        <path d="M914,97 L939.531182,122.855895 L939.531182,189.292764 L914,212.021669 L914,335.789464 L1013.87019,437.817144 L933.626114,518.307748 L933.626114,748.804602 L1041,859.410003 L1041,965.105629 L1008.29394,998.111663 L1008.29394,1081.17821 L1034.35882,1107.47278 L1034.35882,1191.50245 L983.749497,1243" id="serp" stroke="#AEAEAE"></path>
+        <path d="M1043,289 L1043,444.402515 L1306.75589,707.12613 L1306.75589,931.4844 L1348,972.903987 L1348,1224" id="lyub" stroke="#ACD321"></path>
+        <path d="M1038,1052 L1156,1052" id="kakh" stroke="#0085BE"></path>
+      </g>
+    </svg>
+      
+    
+    <script>
+      
+      $(document).ready(function () {
+          
+        //MOSCOW METRO
+        var $soko = parseInt($("#soko").css("stroke-dashoffset"), 10);
+        var $zamo = parseInt($("#zamo").css("stroke-dashoffset"), 10);
+        var $arba = parseInt($("#arba").css("stroke-dashoffset"), 10);
+        var $file = parseInt($("#file").css("stroke-dashoffset"), 10);
+        var $kolt = parseInt($("#kolt").css("stroke-dashoffset"), 10);
+        var $kalu = parseInt($("#kalu").css("stroke-dashoffset"), 10);
+        var $taga = parseInt($("#taga").css("stroke-dashoffset"), 10);
+        var $kali = parseInt($("#kali").css("stroke-dashoffset"), 10);
+        var $serp = parseInt($("#serp").css("stroke-dashoffset"), 10);
+        var $lyub = parseInt($("#lyub").css("stroke-dashoffset"), 10);
+        var $kakh = parseInt($("#kakh").css("stroke-dashoffset"), 10);
+        
+        //on a scroll event - execute function
+        $(window).on('scroll', function () {    
+
+          var a = $(window).scrollTop();
+          var b = $("html").height();  
+          //$(window).height() returns the document for some reason
+          //so using vanilla JS instead
+          var c = window.innerHeight;
+
+          //calculate how far down the page the user is 
+          var $percentComp = ( ( a / ( b - c ) ) * 100 );    
+
+          //set the new value of the dashoffset (based on current %) to create the drawing effect        
+          //MOSCOW METRO
+          $("#soko").css("stroke-dashoffset", $soko-($percentComp*($soko/100)));
+          $("#zamo").css("stroke-dashoffset", $zamo-($percentComp*($zamo/100)));
+          $("#arba").css("stroke-dashoffset", $arba-($percentComp*($arba/100)));
+          $("#file").css("stroke-dashoffset", $file-($percentComp*($file/100)));
+          $("#kolt").css("stroke-dashoffset", $kolt-($percentComp*($kolt/100)));
+          $("#kalu").css("stroke-dashoffset", $kalu-($percentComp*($kalu/100)));
+          $("#taga").css("stroke-dashoffset", $taga-($percentComp*($taga/100)));
+          $("#kali").css("stroke-dashoffset", $kali-($percentComp*($kali/100)));
+          $("#serp").css("stroke-dashoffset", $serp-($percentComp*($serp/100)));
+          $("#lyub").css("stroke-dashoffset", $lyub-($percentComp*($lyub/100)));
+          $("#kakh").css("stroke-dashoffset", $kakh-($percentComp*($kakh/100)));
+
+          //display the $percentComp variable as a width percentage
+          $(".progress").css("width", $percentComp + "%");
+
+          //display the percentage complete in the overlay as a rounded number
+          $(".percentage-indicator").text(Math.round($percentComp) + "%");
+
+        });
+        
+      });
+      
+    </script>
+  </body>
+</html>

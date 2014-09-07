@@ -1,0 +1,43 @@
+//_los-santos.scss
+
+//border colours for los santos 'show/hide' buttons
+button {
+  &#underground-one-btn,
+  &#underground-two-btn,
+  &#underground-three-btn {
+    border-color: #d0011b;
+  }
+  &#aboveground-one-btn,
+  &#aboveground-two-btn {
+    border-color: #f6a623;
+  }
+}
+
+//offsets for los santos svg animation
+#underground-one {
+  stroke-dashoffset: 800;
+  stroke-dasharray: 800;
+}
+#underground-two {
+  stroke-dashoffset: 330;
+  stroke-dasharray: 330;
+}
+#underground-three {
+  stroke-dashoffset: 1760;
+  stroke-dasharray: 1760;
+}
+#aboveground-one {
+  stroke-dashoffset: 600;
+  stroke-dasharray: 600;
+}
+#aboveground-two {
+  stroke-dashoffset: 440;
+  stroke-dasharray: 440;
+}
+
+//.info-overlay {
+//  p:last-child {
+//    margin: 0 auto;
+//    width: 80%;
+//  }
+//}

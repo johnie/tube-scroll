@@ -1,0 +1,84 @@
+//_moscow-metro.scss
+
+//border colours for moscow metro 'show/hide' buttons
+button {
+  &#soko-btn {
+    border-color: #f4001d;
+  }
+  &#zamo-btn {
+    border-color: #339600;
+  }
+  &#arba-btn {
+    border-color: #3945bb;
+  }
+  &#file-btn {
+    border-color: #4d9af2;
+  }
+  &#kolt-btn {
+    border-color: #8b572a;
+  }
+  &#kalu-btn {
+    border-color: #f6a623;
+  }
+  &#taga-btn {
+    border-color: #b900a7;
+  }
+  &#kali-btn {
+    border-color: #f8d11c;
+  }
+  &#serp-btn {
+    border-color: #aeaeae;
+  }
+  &#lyub-btn {
+    border-color: #acd321;
+  }
+  &#kakh-btn {
+    border-color: #0085be;
+  }
+}
+
+//offsets for moscow metro svg animation
+#soko {
+  stroke-dashoffset: 1060;
+  stroke-dasharray: 1060;
+}
+#zamo {
+  stroke-dashoffset: 1340;
+  stroke-dasharray: 1340;
+}
+#arba {
+  stroke-dashoffset: 1540;
+  stroke-dasharray: 1540;
+}
+#file {
+  stroke-dashoffset: 840;
+  stroke-dasharray: 840;
+}
+#kolt {
+  stroke-dashoffset: 1660;
+  stroke-dasharray: 1660;
+}
+#kalu {
+  stroke-dashoffset: 1260;
+  stroke-dasharray: 1260;
+}
+#taga {
+  stroke-dashoffset: 1200;
+  stroke-dasharray: 1200;
+}
+#kali {
+  stroke-dashoffset: 500;
+  stroke-dasharray: 500;
+}
+#serp {
+  stroke-dashoffset: 1360;
+  stroke-dasharray: 1360;
+}
+#lyub {
+  stroke-dashoffset: 1070;
+  stroke-dasharray: 1070;
+}
+#kakh {
+  stroke-dashoffset: 120;
+  stroke-dasharray: 120;
+}

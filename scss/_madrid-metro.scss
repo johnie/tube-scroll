@@ -1,0 +1,99 @@
+//_madrid-metro.scss
+
+//border colours for madrid metro 'show/hide' buttons
+button {
+  &#line-one-btn {
+    border-color: #4bbccc;
+  }
+  &#line-two-btn {
+    border-color: #d0011b;
+  }
+  &#line-three-btn {
+    border-color: #f8c71c;
+  }
+  &#line-four-btn {
+    border-color: #bd5e21;
+  }
+  &#line-five-btn {
+    border-color: #72bf1d;
+  }
+  &#line-six-btn {
+    border-color: #b1adad;
+  }
+  &#line-seven-btn {
+    border-color: #e8960f;
+  }
+  &#line-eight-btn {
+    border-color: #e78ecd;
+  }
+  &#line-nine-btn {
+    border-color: #85099e;
+  }
+  &#line-ten-btn {
+    border-color: #1a5aab;
+  }
+  &#line-eleven-btn {
+    border-color: #519700;
+  }
+  &#line-twelve-btn {
+    border-color: #939129;
+  }
+  &#line-r-btn {
+    border-color: #000;
+  }
+}
+
+//offsets for madrid metro svg animation
+#line-one {
+  stroke-dashoffset: 960;
+  stroke-dasharray: 960;
+}
+#line-two {
+  stroke-dashoffset: 760;
+  stroke-dasharray: 760;
+}
+#line-three {
+  stroke-dashoffset: 580;
+  stroke-dasharray: 580;
+}
+#line-four {
+  stroke-dashoffset: 720;
+  stroke-dasharray: 720;
+}
+#line-five {
+  stroke-dashoffset: 960;
+  stroke-dasharray: 960;
+}
+#line-six {
+  stroke-dashoffset: 1360;
+  stroke-dasharray: 1360;
+}
+#line-seven {
+  stroke-dashoffset: 1000;
+  stroke-dasharray: 1000;
+}
+#line-eight {
+  stroke-dashoffset: 480;
+  stroke-dasharray: 480;
+}
+#line-nine {
+  stroke-dashoffset: 940;
+  stroke-dasharray: 940;
+}
+#line-ten {
+  stroke-dashoffset: 1260;
+  stroke-dasharray: 1260;
+}
+#line-eleven {
+  stroke-dashoffset: 260;
+  stroke-dasharray: 260;
+}
+#line-twelve {
+  stroke-dashoffset: 1080;
+  stroke-dasharray: 1080;
+}
+#line-r {
+  stroke-dashoffset: 160;
+  stroke-dasharray: 160;
+}
+
