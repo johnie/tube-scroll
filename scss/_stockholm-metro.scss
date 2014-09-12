@@ -1,0 +1,39 @@
+//_stockholm-metro.scss
+
+//border colours for stockholm metro 'show/hide' buttons
+button {
+  &#t10-btn, 
+  &#t11-btn {
+    border-color: #4a90e2;
+  }
+  &#t13-btn, 
+  &#t14-btn {
+    border-color: #d82333;
+  }
+  &#t17-btn,
+  &#t18-btn,
+  &#t19-btn {
+    border-color: #508a34;
+  }
+}
+
+//offsets for stockholm metro svg animation
+#t10{
+  stroke-dashoffset: 2900;
+  stroke-dasharray: 2900;
+}
+#t11 {
+  stroke-dashoffset: 2000;
+  stroke-dasharray: 2000;
+}
+#t13,
+#t14 {
+  stroke-dashoffset: 2000;
+  stroke-dasharray: 2000;
+}
+#t17,
+#t18,
+#t19 {
+  stroke-dashoffset: 2000;
+  stroke-dasharray: 2000;
+}
